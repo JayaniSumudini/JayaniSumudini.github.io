@@ -27,7 +27,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Main CSS -->
     <link href="assets/css/main.css" rel="stylesheet" />
-
+    <script
+      defer
+      src="https://media.twiliocdn.com/sdk/js/webchat-v3/releases/1.0.0/webchat.min.js"
+      integrity="sha256-r0K9qRArB8v/DRDech+o4GYZhbgt4cHVmLLcw4891k8="
+      crossorigin="anonymous"
+    ></script>
     <title>Jayani Sumudini - Portfolio</title>
   </head>
   <body>
@@ -62,9 +67,7 @@
               ></a>
             </li>
             <li>
-              <a
-                href="https://blog.jayanisumudini.com/"
-                target="_blank"
+              <a href="https://blog.jayanisumudini.com/" target="_blank"
                 ><i class="ri-book-fill"></i
               ></a>
             </li>
@@ -117,18 +120,34 @@
         <section>
           <h2 class="ds-heading">About Me</h2>
           <p>
-            Experienced and self-motivated software engineer with a Computer Science and Engineering background 
-            As a highly skilled back-end developer, I'm always on the lookout for fresh challenges that push me to innovate and grow. 
+            Experienced and self-motivated software engineer with a Computer
+            Science and Engineering background As a highly skilled back-end
+            developer, I'm always on the lookout for fresh challenges that push
+            me to innovate and grow.
           </p>
-          <p> 
-            With more than 5 years of working experience in a competitive organization surrounded by highly skilled people, I've honed my skills in JavaScript, TypeScript, NodeJS, Java, Spring Framework, and AWS.
-            My passion for back-end development stems from my love of problem-solving and creating efficient and scalable solutions that empower businesses to thrive. I believe that every project is an opportunity to learn something new and to push the boundaries of what's possible.
-          </p> 
           <p>
-            I'm currently seeking a dynamic and progressive company where I can utilize my skills to the fullest extent and contribute to the development of cutting-edge products and services. If you're looking for a dedicated back-end developer who is committed to delivering high-quality work and exceeding expectations, then let's connect!
+            With more than 5 years of working experience in a competitive
+            organization surrounded by highly skilled people, I've honed my
+            skills in JavaScript, TypeScript, NodeJS, Java, Spring Framework,
+            and AWS. My passion for back-end development stems from my love of
+            problem-solving and creating efficient and scalable solutions that
+            empower businesses to thrive. I believe that every project is an
+            opportunity to learn something new and to push the boundaries of
+            what's possible.
+          </p>
+          <p>
+            I'm currently seeking a dynamic and progressive company where I can
+            utilize my skills to the fullest extent and contribute to the
+            development of cutting-edge products and services. If you're looking
+            for a dedicated back-end developer who is committed to delivering
+            high-quality work and exceeding expectations, then let's connect!
           </p>
           <div class="ds-button-sec text-center">
-            <a href="https://drive.google.com/file/d/16qj8sBeqz5qpodL0uSrRsVEWh2Tl_Zxp/view?usp=sharing" class="ds-button">Download Resume</a>
+            <a
+              href="https://drive.google.com/file/d/16qj8sBeqz5qpodL0uSrRsVEWh2Tl_Zxp/view?usp=sharing"
+              class="ds-button"
+              >Download Resume</a
+            >
           </div>
         </section>
       </div>
@@ -197,11 +216,10 @@
                 BSc (Hons) Engineering, Specialized in Computer Engineering
               </h3>
               <span class="ds-department">
-                <p>Faculty of Engineering, University of Peradeniya, Sri
-                Lanka
-                <br/>Grade: 2nd class upper division - GPA 3.30/4.00
+                <p>
+                  Faculty of Engineering, University of Peradeniya, Sri Lanka
+                  <br />Grade: 2nd class upper division - GPA 3.30/4.00
                 </p>
-                
               </span>
             </section>
           </div>
@@ -506,5 +524,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
     <script src="assets/js/main.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        const appConfig = {
+          deploymentKey: "CVa8590441a5f264222983df3f4a1040c8",
+        };
+        Twilio.initWebchat(appConfig);
+      });
+    </script>
   </body>
 </html>
